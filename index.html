@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Extra Time Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h3>Extra Time Calculator</h3>
+    <form id="etform">
+      <table id="ettable">
+	<tr>
+	  <td>Start time:</td>
+	  <td>
+	    <select name="starthr" id="starthr">
+	      <option value="7">7</option>
+	      <option value="8">8</option>
+	      <option value="9" selected>9</option>
+	      <option value="10">10</option>
+	      <option value="11">11</option>
+	      <option value="12">12</option>
+	      <option value="1">1</option>
+	      <option value="2">2</option>
+	      <option value="3">3</option>
+	      <option value="4">4</option>
+	      <option value="5">5</option>
+	      <option value="6">6</option>
+	    </select>
+	    <select name="startmin" id="startmin">
+	      <option value="0" selected>00</option>
+	      <option value="5">05</option>
+	      <option value="10">10</option>
+	      <option value="15">15</option>
+	      <option value="20">20</option>
+	      <option value="25">25</option>
+	      <option value="30">30</option>
+	      <option value="35">35</option>
+	      <option value="40">40</option>
+	      <option value="45">45</option>
+	      <option value="50">50</option>
+	      <option value="55">55</option>
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Length:</td><td><input type="text" id="lengthhr">hrs <input type="text" id="lengthmin">min</td>
+	</tr>
+	<tr>
+	  <td>Extra Time:</td><td><input type="text" id="percent">%</td>
+	</tr>
+	<tr>
+	  <td>End Time:</td><td id="end"></td>
+	</tr>
+	<tr>
+	  <td>Actual Length:</td><td id="alen"></td>
+	</tr>
+      </table>
+      <button type="button" id="calcbtn" name="calcbtn">Calculate</button>
+    </form>
+  </body>
+</html>
