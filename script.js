@@ -7,8 +7,10 @@ window.addEventListener('load',init,false);
 
 function calculate() {
     var e;
-    var lengthhr = parseInt(document.getElementById("lengthhr").value,10);
-    var lengthmin = parseInt(document.getElementById("lengthmin").value,10);
+    var lengthhr = document.getElementById("lengthhr").value;
+    lengthhr = (lengthhr == '' ? 0 : parseInt(lengthhr,10));
+    var lengthmin = document.getElementById("lengthmin").value;
+    lengthmin = (lengthmin == '' ? 0 : parseInt(lengthmin,10));
     var length = lengthhr*60+lengthmin;
 
     var percent = parseInt(document.getElementById("percent").value,10);
